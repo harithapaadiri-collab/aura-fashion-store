@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/assets/fonts/PlayfairDisplay.woff2") format("woff2");
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0rem;
+    /* Warm off-white #F6F2EC */
+    --background: 0.963 0.009 75.0;
+    /* Near-black #111111 */
+    --foreground: 0.145 0 0;
+    /* White card surfaces */
+    --card: 1 0 0;
+    --card-foreground: 0.145 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.145 0 0;
+    /* CTA near-black #1A1A1A */
+    --primary: 0.17 0 0;
+    --primary-foreground: 0.985 0 0;
+    /* Soft warm secondary */
+    --secondary: 0.93 0.007 75.0;
+    --secondary-foreground: 0.17 0 0;
+    --muted: 0.93 0.007 75.0;
+    /* #666666 */
+    --muted-foreground: 0.47 0 0;
+    --accent: 0.93 0.007 75.0;
+    --accent-foreground: 0.17 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    /* Border #E6E1DA */
+    --border: 0.895 0.008 75.0;
+    --input: 0.895 0.008 75.0;
+    --ring: 0.17 0 0;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.17 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.93 0.007 75.0;
+    --sidebar-accent-foreground: 0.17 0 0;
+    --sidebar-border: 0.895 0.008 75.0;
+    --sidebar-ring: 0.17 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-serif {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+@layer utilities {
+  .tracking-widest-plus {
+    letter-spacing: 0.2em;
+  }
+}
